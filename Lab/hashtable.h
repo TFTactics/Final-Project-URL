@@ -11,6 +11,9 @@ using namespace std;
 constexpr auto TABLE_SIZE = 97;
 constexpr auto PRIME = 93;
 
+int x_ma = 3, y_ma = 41;
+
+
 // Class Hashtable
 class HashTable {
 private:
@@ -122,7 +125,8 @@ void HashTable::removeItem(int key) {
 		}
 	}
 	if (!keyExists) {
-		cout << "[WARNING] Khong tim thay key." << endl;
+		gotoxy(x_ma, y_ma);
+		cout << "[WARNING] KHONG TIM THAY KEY.";
 	}
 	return;
 }
@@ -161,7 +165,8 @@ void HashTable::Connect(int key) {
 		}
 	}
 	if (!keyExists) {
-		cout << "[WARNING] Khong tim thay key" << endl;
+		gotoxy(x_ma, y_ma);
+		cout << "[WARNING] KHONG TIM THAY KEY" << endl;
 	}
 	return;
 }
