@@ -1,0 +1,4 @@
+﻿  Lab.cpp
+C:\Users\T\Downloads\Lab\Lab\graphic.h(29,28): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+C:\Users\T\Downloads\Lab\Lab\graphic.h(29,34): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+  Lab.vcxproj -> C:\Users\T\Downloads\Lab\Debug\Lab.exe
