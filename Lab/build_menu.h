@@ -76,7 +76,9 @@ void buidMenu() {
 
 	int x_link = 3, y_link = 3;
 	gotoxy(x_link, y_link);
+	SetColor(10);
 	cout << "****************MENU****************";
+	SetColor(15);
 	gotoxy(x_link, y_link + 2);
 	cout << "1. UTEX";
 	gotoxy(x_link, y_link + 4);
@@ -90,7 +92,9 @@ void buidMenu() {
 
 	int x_func = 3, y_func = 14;
 	gotoxy(x_func, y_func);
+	SetColor(10);
 	cout << "**************CHUC NANG**************";
+	SetColor(15);
 	gotoxy(x_func, y_func + 2);
 	cout << "1. Xoa URL.";
 	gotoxy(x_func, y_func + 4);
@@ -103,7 +107,9 @@ void buidMenu() {
 	// CHÈN URL DEPTH
 	int x_depth = 3, y_depth = 25;
 	gotoxy(x_depth, y_depth);
+	SetColor(10);
 	cout << "**************URL DEPTH**************";
+	SetColor(15);
 	gotoxy(x_depth, y_depth + 2);
 	cout << "1. URL depth 1";
 	gotoxy(x_depth, y_depth + 4);
@@ -118,6 +124,7 @@ void buidMenu() {
 	// KHUNG CHO DEPTH
 
 	gotoxy(115, 3);
+	SetColor(10);
 	cout << "DANH SACH URL";
 	// KHUNG CHO USER
 	int h_user = 2, w_user = 50;
@@ -142,4 +149,6 @@ void buidMenu() {
 		gotoxy(x_user + w_user, iy);
 		cout << char(179);
 	}
+
+	SetColor(15);
 }

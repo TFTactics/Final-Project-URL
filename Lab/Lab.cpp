@@ -25,15 +25,15 @@ void ShowDis() {
 	gotoxy(x, y);
 	cout << "URL depth 2 for link 1";
 	depth_1.printTable(x, y);
-	y += 6;
+	y += 7;
 	gotoxy(x, y);
 	cout << "URL depth 2 for link 2";
 	depth_2.printTable(x, y);
-	y += 6;
+	y += 7;
 	gotoxy(x, y);
 	cout << "URL depth 2 for link 3";
 	depth_3.printTable(x, y);
-	y += 6;
+	y += 7;
 	gotoxy(x, y);
 	cout << "URL depth 2 for link 4";
 	depth_4.printTable(x, y);

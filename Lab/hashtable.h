@@ -8,8 +8,8 @@
 #include "graphic.h"
 #include <iomanip>
 using namespace std;
-constexpr auto TABLE_SIZE = 97;
-constexpr auto PRIME = 93;
+constexpr auto TABLE_SIZE = 53; 
+constexpr auto PRIME = 29;
 
 int x_ma = 3, y_ma = 41;
 
@@ -61,6 +61,7 @@ public:
 				int newIndex = (index + i * index2) % TABLE_SIZE;
 				if (hashTable[newIndex] == -1) {
 					hashTable[newIndex] = key;
+					curr_size++;
 					return newIndex;
 				}
 				i++;
@@ -68,8 +69,8 @@ public:
 		}
 		else
 			hashTable[index] = key;
-		return index;
 		curr_size++;
+		return index;
 	}
 };
 

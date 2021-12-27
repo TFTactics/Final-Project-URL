@@ -1,5 +1,5 @@
 ﻿  Lab.cpp
 D:\MyProject\Final-Project-URL\Lab\graphic.h(29,28): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
 D:\MyProject\Final-Project-URL\Lab\graphic.h(29,34): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-D:\MyProject\Final-Project-URL\Lab\hashtable.h(80,25): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+D:\MyProject\Final-Project-URL\Lab\hashtable.h(81,25): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
   Lab.vcxproj -> D:\MyProject\Final-Project-URL\x64\Debug\Lab.exe

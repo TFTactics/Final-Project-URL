@@ -46,10 +46,18 @@ void XoaManHinh()
 /* GetAsyncKeyState(VK_ESCAPE) => bắt sự kiện phím Esc */
 
 // Hàm tự viết
-void ToMau(int x, int y, char* a, int color) // x, y là tọa độ con trỏ cần nhảy đến để viết, a là chuỗi cần truyền vào, color là màu truyền vào.
+void SetColor(WORD color)
 {
-	gotoxy(x, y);
-	textcolor(color);
-	cout << a;
-	textcolor(7);
+	HANDLE hConsoleOutput;
+	hConsoleOutput = GetStdHandle(STD_OUTPUT_HANDLE);
+
+	CONSOLE_SCREEN_BUFFER_INFO screen_buffer_info;
+	GetConsoleScreenBufferInfo(hConsoleOutput, &screen_buffer_info);
+
+	WORD wAttributes = screen_buffer_info.wAttributes;
+	color &= 0x000f;
+	wAttributes &= 0xfff0;
+	wAttributes |= color;
+
+	SetConsoleTextAttribute(hConsoleOutput, wAttributes);
 }
