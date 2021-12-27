@@ -194,7 +194,7 @@ void printItinerary(map<string, string> dataSet)
 	}
 	if (start.empty())
 	{
-		cout << "Invalid Input" << endl;
+		cout << "Dau vao khong hop le" << endl;
 		return;
 	}
 	it = dataSet.find(start);
